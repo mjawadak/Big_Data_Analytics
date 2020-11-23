@@ -49,7 +49,7 @@ chmod 644 *.csv
 psql -f setup/init-postgres.sql
 
 # download and install anaconda for pandas, jupyter
-wget http://repo.continuum.io/archive/Anaconda3-4.0.0-Linux-x86_64.sh
+wget http://repo.continuum.io/archive/Anaconda3-4.0.0-Linux-x86_64.sh --no-check-certificate
 bash Anaconda3-4.0.0-Linux-x86_64.sh
 
 # add postgres jdbc jar to spark classpath
